@@ -1,0 +1,1657 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals/"
+     xml:base="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:practice-set_chemicals="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyolefins"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Olefins"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isProducedByPolymerization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isProducedByPolymerization">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BasicThermoplastics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermosets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresBlowingAgents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresBlowingAgents">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BlowingAgents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresCatalyst -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresCatalyst">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Catalysts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresChainTransferAgents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresChainTransferAgents">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainTransferAgents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresInitiators -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresInitiators">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Initiators"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresPolymerizationInhibitor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresPolymerizationInhibitor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerizationInhibitors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresSolvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresSolvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresStabilizers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresStabilizers">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresSurfactants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresSurfactants">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IsConductedAtPressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IsConductedAtPressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAt"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment xml:lang="en">Unit: Pascal</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasAutoignitionTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasAutoignitionTemperature">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Unit: Degree Celcius</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasBoilingPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasBoilingPoint">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Unit: Degree Celcius</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasCASNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasCASNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasCanonicalSMILES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasCanonicalSMILES">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasDensity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasDensity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Unit: gram/cubic centimeter</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasECNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasECNumber">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasFlashPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasFlashPoint">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Unit: Degree Celcius</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasHLBValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasHLBValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasInChI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasInChI">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasInChIKey -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasInChIKey">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMeltingPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMeltingPoint">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Unit: Degree Celcius</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMolecularFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMolecularFormula">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasSMILES -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasSMILES">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAtTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAtTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAt"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment xml:lang="en">Unit: Degree Celcius</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Absorbents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Absorbents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Accelerators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Accelerators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AcrylicMonomers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AcrylicMonomers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Acrylics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Acrylics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermosets"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AcrylicMonomers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ActivatorsCocatalysts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ActivatorsCocatalysts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ActiveDiluents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ActiveDiluents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Diluents"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ReactiveDiluents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Adsorbents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Adsorbents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Air-EntrainingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Air-EntrainingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AliphaticSolvents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AliphaticSolvents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericDispersingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericDispersingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#DispersingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericEmulsifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericEmulsifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Emulsfier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericSurfactant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericSurfactant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericWettingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AmphotericWettingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WettingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicDispersingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicDispersingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#DispersingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicEmulsifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicEmulsifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Emulsfier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicSurfactant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicSurfactant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicWettingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AnionicWettingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WettingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anti-Degradants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anti-Degradants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anti-FoamingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anti-FoamingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Antioxidants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Antioxidants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Antiozonants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Antiozonants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AromaticSolvents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#AromaticSolvents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BasicThermoplastics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BasicThermoplastics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Bio-based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Bio-based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BlendsCombinations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BlendsCombinations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BlowingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BlowingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BulkPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BulkPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FreeRadicalPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BulkingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BulkingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Carriers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Carriers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CarriersAndSupports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CarriersAndSupports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Catalysts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Catalysts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicDispersingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicDispersingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#DispersingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicEmulsifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicEmulsifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Emulsfier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicSurfactant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicSurfactant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicWettingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CationicWettingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WettingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainGrowthPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainGrowthPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainTransferAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainTransferAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CoordinationPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CoordinationPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainGrowthPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cosolvents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cosolvents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CrosslinkingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CrosslinkingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CuringAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CuringAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CyclicCompounds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CyclicCompounds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Defoamers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Defoamers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Diluents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Diluents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Diols -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Diols">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#DispersingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#DispersingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ElectrochemicalPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ElectrochemicalPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Emulsfier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Emulsfier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#EmulsionPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#EmulsionPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FreeRadicalPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#EnzymaticPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#EnzymaticPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Esters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Esters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamBoosters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamBoosters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamStabilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamStabilizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FreeRadicalPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FreeRadicalPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainGrowthPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HALS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HALS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HalogenatedSolvents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HalogenatedSolvents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Hardeners -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Hardeners">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IRAbsorbers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IRAbsorbers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Initiators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Initiators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#InorganicSolvents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#InorganicSolvents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicLiquids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicLiquids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainGrowthPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Isocyanates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Isocyanates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ketones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ketones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#LightStabilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#LightStabilizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MethacrylicMonomers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MethacrylicMonomers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MineralOilBased -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MineralOilBased">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Defoamers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Nonionic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Nonionic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#IonicNature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicDispersingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicDispersingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#DispersingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Nonionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicEmulsifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicEmulsifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Emulsfier"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicSurfactant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicSurfactant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Nonionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicWettingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#NonionicWettingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WettingAgent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Nonionic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Olefins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Olefins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photocatalysts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photocatalysts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photoinitiator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photoinitiator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photopolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photopolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PlasmaPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PlasmaPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyaddition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyaddition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StepGrowthPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polycondensation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polycondensation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StepGrowthPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyethylene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyethylene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyolefins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerBased -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerBased">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Defoamers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#requiresAdditives"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#isConductedAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerizationInhibitors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerizationInhibitors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyolefins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyolefins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BasicThermoplastics"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Olefins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyols -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyols">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polypropylene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polypropylene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyolefins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyurethane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyurethane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermosets"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Isocyanates"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyols"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ProcessingMethods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ProcessingMethods"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ReactiveDiluents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ReactiveDiluents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Diluents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Retarders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Retarders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#RingOpeningPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#RingOpeningPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SiliconeBased -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SiliconeBased">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Defoamers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolidStatePolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolidStatePolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solubilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solubilizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolutionPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolutionPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FreeRadicalPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Solvents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StepGrowthPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StepGrowthPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StyreneMonomers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StyreneMonomers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StyrenicsPolymers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StyrenicsPolymers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BasicThermoplastics"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StyreneMonomers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfactantBlends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfactantBlends">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasIonicNature"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Surfactants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SuspensionPolymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SuspensionPolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FreeRadicalPolymerization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermo-oxidativeStabilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermo-oxidativeStabilizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermosets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermosets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thinners -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thinners">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolventsDiluentsCarriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#UVAbsorbers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#UVAbsorbers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#UVStabilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#UVStabilizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VinylEster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VinylEster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Thermosets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VinylPolymers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VinylPolymers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BasicThermoplastics"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#hasMonomer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VinylPolymers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Vinylics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Vinylics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Monomers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VulcanizingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#VulcanizingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CatalystsAndCuringAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WettingAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WettingAgent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SurfaceActiveAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WhippingAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#WhippingAgents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#FoamingAdditives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Heat/ThermalStabilizers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Heat/ThermalStabilizers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PolymerStabilizers"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethylene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethylene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Olefins"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HDPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HDPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyethylene"/>
+        <practice-set_chemicals:hasMonomer rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethylene"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MetallocenePolymerization"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ziegler-Natta_Polymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HighPressurePolymerization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HighPressurePolymerization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#BulkPolymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#LDPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#LDPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyethylene"/>
+        <practice-set_chemicals:hasMonomer rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethylene"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#HighPressurePolymerization"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MetallocenePolymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#LLDPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#LLDPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyethylene"/>
+        <practice-set_chemicals:hasMonomer rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethylene"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MetallocenePolymerization"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ziegler-Natta_Polymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MetallocenePolymerization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MetallocenePolymerization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CoordinationPolymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PHP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PHP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polypropylene"/>
+        <practice-set_chemicals:hasMonomer rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Propylene"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PRC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PRC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polypropylene"/>
+        <practice-set_chemicals:hasMonomer rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Propylene"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Propylene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Propylene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Olefins"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#UHMWPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#UHMWPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Polyethylene"/>
+        <practice-set_chemicals:hasMonomer rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ethylene"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#MetallocenePolymerization"/>
+        <practice-set_chemicals:isProducedByPolymerization rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ziegler-Natta_Polymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ziegler-Natta_Polymerization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Ziegler-Natta_Polymerization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#CoordinationPolymerization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Amphoteric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Anionic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Cationic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Nonionic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ChainGrowthPolymerization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SpecialPolymerizationMethod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#StepGrowthPolymerization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#ElectrochemicalPolymerization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#EnzymaticPolymerization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#Photopolymerization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#PlasmaPolymerization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#RingOpeningPolymerization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nasir/ontologies/2025/2/practice-set_chemicals#SolidStatePolymerization"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
